@@ -1,0 +1,58 @@
+/*? Estilos CSS del body de forma global*/
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #CFBDED, #563e7d);
+}
+
+
+/*? Estilos CSS del header de forma global*/
+header {
+    font-size: large;
+    background-color: #563e7d;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/*? Clase navigator para el nav dentro del header */
+header .navigator {
+    margin-left: 20px;
+    padding: 20px;
+    justify-content: space-around;
+
+}
+
+/** Estilo para acomodar los elementos del navegador */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/** Separacion entre los elementos del navegador */
+header nav ul li {
+    margin-left: 5%;
+}
+
+header nav ul li{
+    margin-left: 60px;
+}
+
+/** Dar diseño de "Boton" a los enlaces*/
+ul li a {
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #e85d00;
+    font-size: 20px;
+}
+
+/** Efectos de hover para el navegador*/
+a:hover{
+    background-color: #0aa333;
+    color: #fff;
+
+}
