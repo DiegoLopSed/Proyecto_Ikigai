@@ -56,3 +56,13 @@ a:hover{
     color: #fff;
 
 }
+
+.contenet-info{
+    margin: 60px;
+    padding-top: 15px;
+    padding-left: 50px;
+    align-items: center;
+    max-width: 80%;
+    background-color: #e85d00;
+    margin-left: 5%;
+}
