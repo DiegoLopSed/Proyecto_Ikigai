@@ -1,68 +1,91 @@
-/*? Estilos CSS del body de forma global*/
+/* Estilos básicos */
 body {
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #CFBDED, #563e7d);
-}
-
-
-/*? Estilos CSS del header de forma global*/
-header {
-    font-size: large;
-    background-color: #563e7d;
-    color: #fff;
-    padding: 10px 0;
-}
-
-/*? Clase navigator para el nav dentro del header */
-header .navigator {
-    margin-left: 20px;
-    padding: 20px;
-    justify-content: space-around;
-
-}
-
-/** Estilo para acomodar los elementos del navegador */
-header nav ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/** Separacion entre los elementos del navegador */
-header nav ul li {
-    margin-left: 5%;
-}
-
-header nav ul li{
-    margin-left: 60px;
-}
-
-/** Dar diseño de "Boton" a los enlaces*/
-ul li a {
-    border-radius: 20px;
-    text-decoration: none;
-    padding: 20px;
-    background-color: #e85d00;
-    font-size: 20px;
-}
-
-/** Efectos de hover para el navegador*/
-a:hover{
-    background-color: #0aa333;
-    color: #fff;
-
-}
-
-.contenet-info{
-    margin: 60px;
-    padding-top: 15px;
-    padding-left: 50px;
+header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    background: linear-gradient(160deg, #e52a09,#f17400);
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    max-height: 60px;
+}
+
+.logo a img {
+    transition: transform 0.3s ease;
+}
+
+.logo a img:hover {
+    transform: scale(1.5); /* Zoom al pasar el cursor */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly; /* Espacio alrededor de los enlaces */
+    padding: 0 20px;
+}
+
+
+nav a {
+    margin-left: 30px;
+    background-color: #080e7e;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+    background-color: #e52a09;
+    background-image: linear-gradient(65deg, #f17400 , #e52a09);
+    transform: scale(1.1);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant-image {
     max-width: 80%;
-    background-color: #e85d00;
-    margin-left: 5%;
+    max-height: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: #333 3px;
+}
+
+.lema {
+    font-size: 1.8em;
+    color: #333;
+}
+
+footer {
+    background: linear-gradient(160deg, #e52a09,#f17400);
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
