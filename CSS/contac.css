@@ -8,7 +8,7 @@
 /* Sección de contacto */
 #contactanos {
     padding: 40px;
-    background-color: #b9b9b9;
+    background: linear-gradient(160deg, #f17400,#e52a09,#f6d60b);
     border-radius: 10px;
     margin: 20px auto;
     max-width: 600px;
@@ -16,13 +16,13 @@
 
 #contactanos h2 {
     text-align: center;
-    color: #333;
+    color: #080e7e;
     margin-bottom: 20px;
 }
 
 #contactanos p {
     text-align: center;
-    color: #df5900;
+    color: #000000;
     margin-bottom: 20px;
 }
 

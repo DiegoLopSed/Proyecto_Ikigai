@@ -1,4 +1,10 @@
-/* Estilos básicos */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -88,4 +94,14 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+aside{
+    height: 200px;
+    padding: 10px;
+    background-color: #e52a09;
+    margin-right: 80%;
+    max-width: 200px;
+    margin: 25px;
+    
 }
