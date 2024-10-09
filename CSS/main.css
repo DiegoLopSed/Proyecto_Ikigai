@@ -92,7 +92,7 @@ footer {
     background: linear-gradient(160deg, #e52a09,#f17400);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 aside{
@@ -101,6 +101,5 @@ aside{
     background-color: #e52a09;
     margin-right: 80%;
     max-width: 200px;
-    margin: 25px;
-    
+    margin: 25px;   
 }
