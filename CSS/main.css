@@ -15,51 +15,50 @@ body {
     min-height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
     background: linear-gradient(160deg, #e52a09,#f17400);
-    padding: 20px;
-    color: white;
 }
 
-.logo img {
-    max-height: 60px;
+.navbar-brand img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.logo a img {
-    transition: transform 0.3s ease;
-}
-
-.logo a img:hover {
-    transform: scale(1.5); /* Zoom al pasar el cursor */
+.navbar-brand img:hover {
+    transform: scale(1.3); /** Aumenta el tamaño al hacer hover */
+    opacity: 0.8; /** Disminuye la opacidad al hacer hover */
 }
 
 
-nav {
-    display: flex;
-    justify-content: space-evenly; /* Espacio alrededor de los enlaces */
-    padding: 0 20px;
+/*? Estilos para el enlace principal (navbar-brand) */
+.navbar-brand {
+    color: #fad709; 
+    font-size: 1.5rem; /** Ajusta el tamaño del texto */
+    font-weight: bold; /** Hace el texto en negrita */
+    text-transform: uppercase; /** Convierte el texto a mayúsculas */
+    transition: color 0.3s ease;
 }
 
-
-nav a {
-    margin-left: 30px;
-    background-color: #080e7e;
-    color: white;
-    padding: 20px 20px;
+.navbar-brand:hover {
+    color: #00278b; 
     text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-    transition: background-color 0.5s ease;
 }
 
-nav a:hover {
-    background-color: #e52a09;
-    background-image: linear-gradient(65deg, #f17400 , #e52a09);
-    transform: scale(1.1);
+/*! Estilos para los enlaces de la navegación */
+.nav-link {
+    color: #ffffff; 
+    margin-left: 20px;
+    font-size: 1.2rem; /** Ajusta el tamaño del texto */
+    padding: 10px 25px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
+
+.nav-link:hover {
+    background: linear-gradient(160deg, #0054eb,#091293); 
+    border-radius: 10px; 
+    color: #f5f5f5;
+}
+
+
 
 main {
     flex-grow: 1;
