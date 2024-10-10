@@ -4,47 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Restaurante Japonés</title>
-    <link rel="stylesheet" href="/CSS/contac.css">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <title>Ikigai Sushi - Nuestro Restaurante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/aboutus.css">
 </head>
 
 <body>
 
-
+    <!-- Navigation -->
     <header>
-        <div class="logo">
-            <a href="../index.html"> <!-- Aquí pones la ruta del enlace -->
-                <img src="/ASSETS/Images/Logo.png" alt="Logo del restaurante">
-            </a>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../ASSETS/Images/Logo.png" alt="Logo" width="60" height="60"
+                        class="d-inline-block align-text-top">
+                </a>
 
-        <nav>
-            <a href="#">Nosotros</a>
-            <a href="#menu">Menú</a>
-            <a href="contac_us.html">Contacto</a>
+                <a class="navbar-brand" href="#">Contenido</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../SRC/menu.html">Menu</a>
+                        <a class="nav-link active" href="#">Nosotros</a>
+                        <a class="nav-link active" href="#">Contactanos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero bg-image d-flex justify-content-center align-items-center"
+        style="background-image: url('../ASSETS/Images/Backhero.webp'); height: 30vh;">
+        <h1 class="text-white display-4">Bienvenido a Ikigai Sushi</h1>
+    </section>
 
-    <aside>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum itaque, placeat possimus dolor rem quis
-            dicta modi, aspernatur nemo reiciendis, tempore quidem! Aut porro corrupti quae alias quos, nulla
-            voluptatibus.
-        </p>
-    </aside>
-    <div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ikigai Sushi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vision">Visión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#goals">Metas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- About Us -->
+    <section id="about" class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Sobre Nosotros</h2>
+                <p>Ikigai Sushi nació con la misión de compartir la autenticidad y los sabores de la comida japonesa.
+                    Nos enorgullecemos de utilizar ingredientes frescos y de calidad para ofrecer la mejor experiencia
+                    culinaria.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="../ASSETS/Images/Logo.png" alt="Sobre nosotros" class="img-fluid">
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <!-- Vision Section -->
+    <section id="vision" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestra Visión</h2>
+            <p class="text-center">Ser el restaurante japonés más reconocido por su autenticidad y calidad,
+                proporcionando una experiencia gastronómica única.</p>
+        </div>
+    </section>
 
+    <!-- Goals Section -->
+    <section id="goals" class="container my-5">
+        <h2 class="text-center mb-4">Nuestras Metas</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h3>Innovación</h3>
+                    <p>Nos esforzamos por innovar en cada platillo, fusionando lo mejor de la tradición con ideas
+                        frescas y modernas.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h3>Sostenibilidad</h3>
+                    <p>Priorizamos el uso de ingredientes sostenibles y trabajamos en prácticas que respeten el medio
+                        ambiente.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h3>Experiencia</h3>
+                    <p>Cada visita a Ikigai Sushi debe ser una experiencia inolvidable para nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <p class="text-center">¡Visítanos en nuestro restaurante o comunícate con nosotros!</p>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Teléfono:</strong> +12 3456 7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>© 2024 Restaurante Japonés. Todos los derechos reservados.</p>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
