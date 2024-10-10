@@ -1,0 +1,113 @@
+/* Estilos generales para las secciones */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Sección Sobre Nosotros */
+#about {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+#about h2 {
+    color: #ff6f61;
+    /* Color distintivo */
+}
+
+#about p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para el logo */
+}
+
+/* Sección Visión */
+#vision {
+    background-color: #fff;
+}
+
+#vision h2 {
+    color: #ff6f61;
+}
+
+#vision p {
+    color: #333;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Sección Metas */
+#goals h2 {
+    color: #ff6f61;
+    margin-bottom: 40px;
+}
+
+#goals .card {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#goals .card:hover {
+    transform: translateY(-10px);
+    /* Efecto hover de levantar tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#goals h3 {
+    font-size: 1.8rem;
+    color: #ff6f61;
+}
+
+#goals p {
+    color: #555;
+}
+
+/* Sección Contacto */
+#contact {
+    background-color: #333;
+    color: #fff;
+}
+
+#contact h2 {
+    color: #ff6f61;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+#contact strong {
+    color: #ff6f61;
+    /* Color destacado para la información importante */
+}
+
+#contact .row p {
+    margin-bottom: 0;
+}
