@@ -29,7 +29,7 @@ body {
 }
 
 
-/*? Estilos para el enlace principal (navbar-brand) */
+
 .navbar-brand {
     color: #fad709; 
     font-size: 1.5rem; /** Ajusta el tamaño del texto */
@@ -45,17 +45,16 @@ body {
 
 /*! Estilos para los enlaces de la navegación */
 .nav-link {
-    color: #ffffff; 
-    margin-left: 20px;
+    color: #fad709; 
     font-size: 1.2rem; /** Ajusta el tamaño del texto */
-    padding: 10px 25px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    font-weight: bold; /** Hace el texto en negrita */
+    text-transform: uppercase; /** Convierte el texto a mayúsculas */
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    background: linear-gradient(160deg, #0054eb,#091293); 
-    border-radius: 10px; 
-    color: #f5f5f5;
+    color: #00278b; 
+    text-decoration: none;
 }
 
 
