@@ -1,0 +1,19 @@
+.card-body {
+    background: linear-gradient(-170deg, #e52a09, #f17400,#fbd214);
+    color: white;
+    font-size: 20px;
+}
+
+.card-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-decoration:overline;
+    color: #fad709;
+}
+
+.card-img-top{
+    max-height: 400px;
+}
+.card{
+    box-shadow:chartreuse 50px;
+}
