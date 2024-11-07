@@ -29,12 +29,15 @@
 }
 
 .rating .star:hover {
-    transform: scale(1.2); /* Efecto de agrandar las estrellas al pasar el mouse */
+    transform: scale(1.8); /* Efecto de agrandar las estrellas al pasar el mouse */
 }
 
 /* Estilos para el formulario */
 #review-form {
-    background: linear-gradient(135deg, #f7c2e3, #f6f1c4);
+    font-size: large;
+    color: #f7f7f7;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(-160deg, #e52a09,#f17400,#fbd214);
     width: 48%;
 }
 
@@ -44,8 +47,10 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
+
 #review-form button {
-    background-color: #ec7b24;
+    background-color: #091293;
     border: none;
     color: white;
     font-size: 1.1rem;
@@ -53,7 +58,7 @@
 }
 
 #review-form button:hover {
-    background-color: #e80032;
+    background-color: #ec7b24;
     transform: scale(1.05); /* Efecto de escala en el botón al pasar el mouse */
 }
 
