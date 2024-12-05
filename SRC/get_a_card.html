@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Membresía de Socio</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/card.css">
+  <link rel="stylesheet" href="../CSS/main.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../ASSETS/Images/Logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+        </a>
+        <a class="navbar-brand" href="#">Ikigai Sushi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="SRC/menu.html">Menú</a>
+            <a class="nav-link" href="SRC/about_us.html">Nosotros</a>
+            <a class="nav-link" href="SRC/contact_us.html">Reseñas</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Introducción -->
+  <section class="intro-section text-center">
+    <h3 class="main-colors">¡Únete a nuestra familia Ikigai Sushi!</h3>
+    <p>Obtén beneficios exclusivos al ser parte de nuestra membresía y disfruta de nuestras ofertas únicas y
+      experiencias personalizadas.</p>
+    <img src="https://via.placeholder.com/600x300?text=Membres%C3%ADa+Ikigai+Sushi" alt="Membresía Ikigai Sushi"
+      class="membership-image">
+  </section>
+
+  <!-- Beneficios de la membresía -->
+  <section class="container text-center">
+    <h4 class="second-colors">Beneficios de ser miembro</h4>
+    <ul class="benefits-list">
+      <li>Descuentos exclusivos en el menú.</li>
+      <li>Acceso prioritario a promociones y eventos especiales.</li>
+      <li>Recompensas y puntos acumulables por cada compra.</li>
+      <li>Ofertas personalizadas según tu historial de compras.</li>
+    </ul>
+  </section>
+
+  <!-- Formulario de Membresía -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4 main-colors">Formulario de Membresía de Socio</h2>
+    <div id="membership-form" class="card p-4 shadow-sm rounded">
+      <form id="register-form">
+        <!-- Nombre -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre Completo:</label>
+          <input type="text" id="name" class="form-control" placeholder="Introduce tu nombre" required>
+          <div id="name-feedback" class="invalid-feedback">Por favor, ingresa un nombre válido.</div>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="mb-3">
+          <label for="phone" class="form-label">Número de Teléfono:</label>
+          <input type="tel" id="phone" class="form-control" placeholder="Introduce tu teléfono" required>
+          <div id="phone-feedback" class="invalid-feedback">Por favor, ingresa un número válido.</div>
+        </div>
+
+        <!-- Correo Electrónico -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico:</label>
+          <input type="email" id="email" class="form-control" placeholder="Introduce tu correo" required>
+          <div id="email-feedback" class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+        </div>
+
+        <!-- Membresía -->
+        <div class="mb-3">
+          <label for="membership-level" class="form-label">Nivel de Membresía:</label>
+          <select id="membership-level" class="form-select" required>
+            <option value="">Selecciona un nivel</option>
+            <option value="basico">Básico</option>
+            <option value="estandar">Estándar</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
+
+        <!-- Dirección -->
+        <div class="mb-3" id="address-container" style="display: none;">
+          <label for="address" class="form-label">Dirección:</label>
+          <input type="text" id="address" class="form-control" placeholder="Introduce tu dirección">
+          <div id="address-feedback" class="invalid-feedback">Por favor, ingresa tu dirección.</div>
+        </div>
+
+        <!-- Botón de Enviar -->
+        <div class="d-grid gap-2 mt-4">
+          <button type="submit" class="btn btn-primary" id="submit-btn">Registrar Membresía</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Ikigai Sushi - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
