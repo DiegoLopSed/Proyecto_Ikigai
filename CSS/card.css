@@ -1,0 +1,137 @@
+/* Estilo general */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card .form-label {
+    font-weight: bold;
+}
+
+/* Estilo de los inputs */
+input.form-control, select.form-select {
+    transition: all 0.3s ease;
+}
+
+/* Efecto cuando el campo está en foco */
+input.form-control:focus, select.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Animación de campos de texto al completarse */
+input.form-control.valid, select.form-select.valid {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Estilo para los feedbacks */
+.invalid-feedback {
+    display: none;
+}
+
+input.form-control.invalid, select.form-select.invalid {
+    border-color: #dc3545;
+}
+
+/* Animación de aparición del campo de dirección */
+#address-container {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Animación de validación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Colores principales */
+.main-colors {
+  color: #fbd214; /* Amarillo dorado */
+}
+
+/* Colores secundarios */
+.second-colors {
+  color: #0054eb; /* Azul */
+}
+
+/* Sección de imagen con borde */
+.membership-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Título y descripción introductoria */
+.intro-section {
+  background-color: #f1f1f1;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.intro-section h3 {
+  font-weight: bold;
+  color: #091293; /* Azul profundo */
+}
+
+.intro-section p {
+  color: #555;
+}
+
+/* Beneficios */
+.benefits-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.benefits-list li {
+  background: url('https://img.icons8.com/ios/50/000000/checkmark.png') no-repeat left center;
+  background-size: 20px 20px; /* Ajusta el tamaño del icono */
+  padding-left: 30px; /* Espacio adicional para que no se solape con el texto */
+  margin-bottom: 10px;
+  color: #091293; /* Azul profundo */
+}
+
+/* Estilos del formulario */
+.form-label {
+  font-weight: bold;
+  color: #091293; /* Azul profundo */
+}
+
+.form-control, .form-select {
+  border-color: #fbd214; /* Amarillo dorado */
+}
+
+.btn-primary {
+  background-color: #fbd214; /* Amarillo dorado */
+  border-color: #fbd214; /* Amarillo dorado */
+}
+
+.btn-primary:hover {
+  background-color: #fad709; /* Amarillo cálido */
+  border-color: #fad709; /* Amarillo cálido */
+}
+
+/* Footer */
+.footer {
+  background-color: #091293; /* Azul profundo */
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 50px;
+}

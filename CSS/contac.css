@@ -2,7 +2,7 @@
 #review-section {
     background-color: #f7f7f7;
     border-radius: 10px;
-    padding: 50px 30px;
+    padding: 40px 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -10,7 +10,8 @@
 .rating {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: left;
+    justify-content: center;
+    gap: 0.5rem;
     margin-bottom: 15px;
 }
 
@@ -18,8 +19,7 @@
     font-size: 2rem;
     color: #ddd;
     cursor: pointer;
-    transition: color 0.3s ease;
-    margin: 0 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .rating .star.selected,
@@ -29,32 +29,43 @@
 }
 
 .rating .star:hover {
-    transform: scale(1.8); /* Efecto de agrandar las estrellas al pasar el mouse */
+    transform: scale(1.2); /* Efecto de agrandar las estrellas */
+}
+
+/* Responsividad de las estrellas */
+@media (max-width: 768px) {
+    .rating .star {
+        font-size: 1.5rem; /* Reducir tamaño de estrellas */
+    }
 }
 
 /* Estilos para el formulario */
 #review-form {
-    font-size: large;
+    font-size: 1rem;
     color: #f7f7f7;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: linear-gradient(-160deg, #e52a09,#f17400,#fbd214);
-    width: 48%;
+    background: linear-gradient(-160deg, #e52a09, #f17400, #fbd214);
+    flex-basis: 48%; /* Usar flex-basis para controlar el ancho */
+    border-radius: 10px;
+    padding: 20px;
 }
 
 #review-form input,
 #review-form textarea {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adaptar al ancho del contenedor */
+    margin-bottom: 10px;
 }
-
-
 
 #review-form button {
     background-color: #091293;
     border: none;
     color: white;
     font-size: 1.1rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s ease;
+    width: 100%;
+    padding: 10px;
 }
 
 #review-form button:hover {
@@ -62,12 +73,31 @@
     transform: scale(1.05); /* Efecto de escala en el botón al pasar el mouse */
 }
 
+/* Responsividad para el formulario */
+@media (max-width: 768px) {
+    #review-form {
+        flex-basis: 100%; /* Usar todo el ancho en pantallas pequeñas */
+    }
+}
+
 /* Estilo para las reseñas enviadas */
 #reviews-list {
     overflow-y: auto; /* Solo desplazamiento vertical */
     max-height: 400px;
-    padding-right: 10px;
+    flex-basis: 48%;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsividad para las reseñas */
+@media (max-width: 768px) {
+    #reviews-list {
+        flex-basis: 100%; /* Usar todo el ancho en pantallas pequeñas */
+    }
+}
+
 /* Estilos para las reseñas */
 #reviews-list .card {
     color: white;
@@ -75,8 +105,8 @@
     margin-bottom: 15px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    background: #452200; /* Color de fondo para las tarjetas */
 }
-
 
 #reviews-list .card h5 {
     font-size: 1.25rem;
@@ -93,13 +123,19 @@
     color: #FFD700;
 }
 
-/* Puedes personalizar los colores si lo deseas */
+
+/* Estilo para las reseñas con color neutro */
+.bg-secondary {
+    background-color: #6c757d !important; /* Gris neutro */
+}
+
+/* Ajustes generales de colores */
 .bg-success {
-    background-color: #452200 !important;
+    background-color: #28a745 !important;
 }
 
 .bg-info {
-    background-color: #17a2b8 !important;
+    background-color: #80e0a7 !important;
 }
 
 .bg-warning {
@@ -107,9 +143,9 @@
 }
 
 .bg-danger {
-    background-color: #dc3545 !important;
+    background-color: #ff9800 !important;
 }
 
 .bg-secondary {
-    background-color: #6c757d !important;
+    background-color: #dc3545 !important;
 }
